@@ -1,0 +1,52 @@
+/* crispy-toast.css */
+.crispy-toast {
+    position: fixed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+  
+  .crispy-toast.success {
+    background-color: #4caf50; /* Green */
+  }
+  
+  .crispy-toast.info {
+    background-color: #04ccc2; /* Blue */
+  }
+  
+  .crispy-toast.warning {
+    background-color: #ff9800; /* Orange */
+  }
+  
+  .crispy-toast.error {
+    background-color: #f44336; /* Red */
+  }
+  
+  .crispy-toast.top-right {
+    top: 20px;
+    right: 20px;
+  }
+
+  .crispy-toast.top-left{
+    top: 20px;
+    left: 20px;
+  }
+
+  .crispy-toast.bottom-right{
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .crispy-toast.bottom-left{
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  /* Add more position styles as needed */
+  

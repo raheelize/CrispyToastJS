@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="crispy-toast.css" />
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif; margin: 0% 4% 0% 4%;">
+    <center>
+        <h1>CrispyToast Library Documentation</h1>
+        <code>
+            <b>
+                <a href="https://github.com/raheelize/CrispyToastJS">
+                    https://github.com/raheelize/CrispyToastJS
+                </a>
+            </b>
+        </code>
+    </center>
+
+    <h2>Introduction</h2>
+    <p>
+      The CrispyToast library provides a lightweight solution for displaying
+      colorful and customizable toast messages in your web application. Toast
+      messages are small, unobtrusive notifications that appear at the bottom of
+      the screen, providing feedback to the user without interrupting their
+      workflow.
+    </p>
+
+    <h2>Usage</h2>
+    <center>
+      <button id="success-btn">Success</button>
+      <button id="info-btn">Info</button>
+      <button id="warning-btn">Warning</button>
+      <button id="error-btn">Error</button>
+    </center>
+    <p>
+      To use the CrispyToast library, simply include the
+      <code>crispy-toast.js</code> script and
+      <code>crispy-toast.css</code> stylesheet in your HTML file. Then, you can
+      create different types of toast messages using the provided functions:
+    </p>
+
+    <pre
+      style="
+        background-color: rgb(236, 236, 236);
+        padding: 2%;
+        border: 1px solid gray;
+      "
+    ><code>
+        // Display a success toast message
+        CrispyToast.success('Success! Your action was completed.');
+
+        // Display an info toast message
+        CrispyToast.info('Info: This is an informational message.');
+
+        // Display a warning toast message
+        CrispyToast.warning('Warning: Something might not be right.');
+
+        // Display an error toast message
+        CrispyToast.error('Error: Oops! An error occurred.');
+        </code></pre>
+
+    <h2>Options</h2>
+    <p>
+      You can customize the behavior of the toast messages by providing optional
+      options:
+    </p>
+
+    <pre
+      style="
+        background-color: rgb(236, 236, 236);
+        padding: 2%;
+        border: 1px solid gray;
+      "
+    ><code>
+        // Display a success toast with a longer timeout
+        CrispyToast.success('Success!', { timeout: 5000 });
+
+        // Display a warning toast positioned at the top-left corner
+        CrispyToast.warning('Warning!', { position: 'top-left' });
+        </code></pre>
+
+    <h2>Styling</h2>
+    <p>
+      The toast messages are styled using the
+      <code>crispy-toast.css</code> stylesheet. You can modify this stylesheet
+      to customize the appearance of the toasts according to your project's
+      design.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      With the CrispyToast library, you can easily add eye-catching and
+      informative toast messages to your web application, improving user
+      experience and providing timely feedback.
+    </p>
+
+    <center>
+        <code>
+            <b>
+                https://github.com/raheelize
+            </b>
+        </code>
+    </center>
+  </body>
+  <script src="crispy-toast.js"></script>
+  <script>
+    document.getElementById("success-btn").addEventListener("click", () => {
+      CrispyToast.success("Success! Your action was successful.", {
+        position: "top-left",
+        timeout: 5000,
+      });
+    });
+
+    document.getElementById("info-btn").addEventListener("click", () => {
+      CrispyToast.info("Just an informational message.", {
+        position: "bottom-right",
+      });
+    });
+
+    document.getElementById("warning-btn").addEventListener("click", () => {
+      CrispyToast.warning("Warning! Something might go wrong.", {
+        timeout: 6000,
+      });
+    });
+
+    document.getElementById("error-btn").addEventListener("click", () => {
+      CrispyToast.error("Oops! An error occurred.", {
+        position: "bottom-left",
+        timeout: 8000,
+      });
+    });
+  </script>
+</html>
