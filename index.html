@@ -66,6 +66,9 @@
         border: 1px solid gray;
       "
     ><code>
+        // Display a simple toast message
+        CrispyToast.message('Hi, Enjoy Using Crispy Toast!.');
+
         // Display a success toast message
         CrispyToast.success('Success! Your action was completed.');
 
@@ -97,6 +100,9 @@
 
         // Display a warning toast positioned at the top-left corner
         CrispyToast.warning('Warning!', { position: 'top-left' });
+
+        // Display a error toast positioned at the bottom-left corner and a longer timeout
+        CrispyToast.error('Error!', { position: 'bottom-left',timeout: 8000  });
         </code></pre>
 
     <h2>Styling</h2>
