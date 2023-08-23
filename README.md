@@ -16,5 +16,7 @@ Getting Started:
 Improve user interaction and visual feedback in your web app by integrating CrispyToastJS. Elevate the user experience with vibrant, colorful, and stylish toast messages!
 
 Visit the Documentation for usage details and examples.
+https://raheelize.github.io/CrispyToastJS/
 
+##
 https://github.com/raheelize/CrispyToastJS
